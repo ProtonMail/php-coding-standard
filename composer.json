@@ -1,0 +1,13 @@
+{
+    "name": "proton/php-coding-standard",
+    "description": "ProtonMail Coding Standard",
+    "type": "phpcodesniffer-standard",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.1",
+        "slevomat/coding-standard": "^4.8",
+        "squizlabs/php_codesniffer": "^3.3.0"
+    },
+    "license": "MIT"
+}

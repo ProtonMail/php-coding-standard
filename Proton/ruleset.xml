@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<ruleset name="Proton">
+    <description>
+        Proton PHP Coding Standard
+    </description>
+
+    <rule ref="PSR2" />
+    <rule ref="PSR2.Namespaces.UseDeclaration">
+        <!-- Allows compound namespaces -->
+        <exclude-pattern>*</exclude-pattern>
+    </rule>
+    <rule ref="PSR12.Namespaces.CompoundNamespaceDepth"/>
+
+    <rule ref="Generic.Commenting.Todo"/>
+    <rule ref="Generic.PHP.LowerCaseKeyword"/>
+    <rule ref="Generic.PHP.DeprecatedFunctions"/>
+    <rule ref="Generic.Formatting.SpaceAfterCast"/>
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+    <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
+    <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
+    <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
+
+    <!-- All PHP files MUST use the Unix LF (linefeed) line ending only. -->
+    <rule ref="Generic.Files.LineEndings">
+        <properties>
+            <property name="eolChar" value="\n"/>
+        </properties>
+    </rule>
+
+    <!-- Ban some functions -->
+    <rule ref="Generic.PHP.ForbiddenFunctions">
+        <properties>
+            <property name="forbiddenFunctions" type="array">
+                <element key="sizeof" value="count"/>
+                <element key="delete" value="unset"/>
+                <element key="print" value="echo"/>
+                <element key="phpinfo" value="null"/>
+                <element key="create_function" value="null"/>
+
+                <!-- Use `::class` keyword -->
+                <element key="get_called_class" value="`static::class`"/>
+                <element key="__CLASS__" value="`self::class`"/>
+
+                <!-- Use casting instead of functions -->
+                <element key="strval" value="(string)"/>
+                <element key="intval" value="(int)"/>
+                <element key="boolval" value="(bool)"/>
+            </property>
+        </properties>
+    </rule>
+
+    <rule ref="Generic.Files.LineLength">
+        <properties>
+            <property name="lineLimit" value="120"/>
+            <property name="absoluteLineLimit" value="0"/>
+        </properties>
+    </rule>
+
+    <rule ref="Generic.Metrics.NestingLevel">
+        <properties>
+            <property name="nestingLevel" value="5" />
+            <property name="absoluteNestingLevel" value="11" />
+        </properties>
+    </rule>
+
+    <rule ref="Squiz.PHP.NonExecutableCode"/>
+    <rule ref="Squiz.PHP.LowercasePHPFunctions"/>
+
+    <!-- <rule ref="Squiz.Strings.ConcatenationSpacing">
+        <properties>
+            <property name="spacing" value="1" />
+            <property name="ignoreNewlines" value="true" />
+        </properties>
+    </rule> -->
+
+    <!-- # Slevomat Coding Standard -->
+    <!-- https://github.com/slevomat/coding-standard -->
+    <config name="installed_paths" value="../../slevomat/coding-standard"/>
+
+    <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
+    <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
+    <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
+    <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
+    <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon"/>
+    <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/>
+    <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
+    <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
+    <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
+    <rule ref="SlevomatCodingStandard.PHP.ShortList"/>
+    <rule ref="SlevomatCodingStandard.PHP.TypeCast"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
+    <rule ref="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces">
+        <properties>
+            <property name="linesCountAfterOpeningBrace" value="0" />
+            <property name="linesCountBeforeClosingBrace" value="0" />
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Commenting.ForbiddenComments"/>
+    <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.UselessConditionWithReturn"/>
+
+    <!--<rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>-->
+    <!--<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>-->
+    <!--<rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>-->
+    <!--<rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>-->
+    <!--<rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>-->
+    <!--<rule ref="SlevomatCodingStandard.Functions.UnusedParameter"/>-->
+    <!--<rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>-->
+
+    <!--
+       If you want to completely disable an error message in a sniff
+       but you don't want to exclude the whole sniff, you can
+       change the severity of the message to 0. In this case, we
+       want the Squiz DoubleQuoteUsage sniff to be included in our
+       standard, but we don't want the ContainsVar error message to
+       ever be displayed.
+    -->
+    <rule ref="Squiz.PHP.CommentedOutCode">
+        <severity>1</severity>
+    </rule>
+
+    <exclude-pattern>*/node_modules/*</exclude-pattern>
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+    <exclude-pattern>*/reports/*</exclude-pattern>
+</ruleset>
