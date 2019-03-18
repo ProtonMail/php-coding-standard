@@ -10,6 +10,7 @@
         <exclude-pattern>*</exclude-pattern>
     </rule>
     <rule ref="PSR12.Namespaces.CompoundNamespaceDepth"/>
+    <rule ref="PSR12.Functions.NullableTypeDeclaration" />
 
     <rule ref="Generic.Commenting.Todo"/>
     <rule ref="Generic.PHP.LowerCaseKeyword"/>
@@ -19,6 +20,10 @@
     <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
     <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
     <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
+    <rule ref="Generic.CodeAnalysis.EmptyPHPStatement" />
+    <rule ref="Generic.Classes.DuplicateClassName" />
+    <rule ref="Generic.WhiteSpace.IncrementDecrementSpacing" />
+    <rule ref="Generic.VersionControl.GitMergeConflict" />
 
     <!-- All PHP files MUST use the Unix LF (linefeed) line ending only. -->
     <rule ref="Generic.Files.LineEndings">
@@ -44,6 +49,7 @@
                 <!-- Use casting instead of functions -->
                 <element key="strval" value="(string)"/>
                 <element key="intval" value="(int)"/>
+                <element key="floatval" value="(float)"/>
                 <element key="boolval" value="(bool)"/>
             </property>
         </properties>
@@ -59,7 +65,7 @@
     <rule ref="Generic.Metrics.NestingLevel">
         <properties>
             <property name="nestingLevel" value="5" />
-            <property name="absoluteNestingLevel" value="11" />
+            <property name="absoluteNestingLevel" value="10" />
         </properties>
     </rule>
 
