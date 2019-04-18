@@ -10,7 +10,7 @@
         <exclude-pattern>*</exclude-pattern>
     </rule>
     <rule ref="PSR12.Namespaces.CompoundNamespaceDepth"/>
-    <rule ref="PSR12.Functions.NullableTypeDeclaration" />
+    <rule ref="PSR12.Functions.NullableTypeDeclaration"/>
 
     <rule ref="Generic.Commenting.Todo"/>
     <rule ref="Generic.PHP.LowerCaseKeyword"/>
@@ -20,9 +20,9 @@
     <rule ref="Generic.CodeAnalysis.UnusedFunctionParameter"/>
     <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
     <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
-    <rule ref="Generic.CodeAnalysis.EmptyPHPStatement" />
-    <rule ref="Generic.Classes.DuplicateClassName" />
-    <rule ref="Generic.WhiteSpace.IncrementDecrementSpacing" />
+    <rule ref="Generic.CodeAnalysis.EmptyPHPStatement"/>
+    <rule ref="Generic.Classes.DuplicateClassName"/>
+    <rule ref="Generic.WhiteSpace.IncrementDecrementSpacing"/>
     <rule ref="Generic.VersionControl.GitMergeConflict" />
 
     <!-- All PHP files MUST use the Unix LF (linefeed) line ending only. -->
@@ -64,8 +64,8 @@
 
     <rule ref="Generic.Metrics.NestingLevel">
         <properties>
-            <property name="nestingLevel" value="5" />
-            <property name="absoluteNestingLevel" value="10" />
+            <property name="nestingLevel" value="5"/>
+            <property name="absoluteNestingLevel" value="10"/>
         </properties>
     </rule>
 
@@ -83,49 +83,65 @@
     <!-- https://github.com/slevomat/coding-standard -->
     <config name="installed_paths" value="../../slevomat/coding-standard"/>
 
-    <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/>
-    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
-    <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
-    <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
-    <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
-    <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon"/>
-    <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/>
-    <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
-    <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
-    <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
-    <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
-    <rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
-    <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
-    <rule ref="SlevomatCodingStandard.PHP.ShortList"/>
     <rule ref="SlevomatCodingStandard.PHP.TypeCast"/>
-    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
-    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
-    <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
-    <rule ref="SlevomatCodingStandard.Types.EmptyLinesAroundTypeBraces">
+    <rule ref="SlevomatCodingStandard.PHP.ShortList"/>
+    <rule ref="SlevomatCodingStandard.PHP.UselessSemicolon"/>
+    <rule ref="SlevomatCodingStandard.PHP.UselessParentheses">
         <properties>
-            <property name="linesCountAfterOpeningBrace" value="0" />
-            <property name="linesCountBeforeClosingBrace" value="0" />
+            <property name="ignoreComplexTernaryConditions" value="1"/>
         </properties>
     </rule>
+    <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
+    <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/>
+    <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
+    <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces">
+        <properties>
+            <property name="linesCountAfterOpeningBrace" value="0"/>
+            <property name="linesCountBeforeClosingBrace" value="0"/>
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
+    <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
+    <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/>
+    <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
+    <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenComments"/>
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
-    <rule ref="SlevomatCodingStandard.ControlStructures.UselessConditionWithReturn"/>
+    <rule ref="SlevomatCodingStandard.Operators.SpreadOperatorSpacing">
+        <properties>
+            <property name="spacesCountAfterOperator" value="0" />
+        </properties>
+    </rule>
+    <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.UselessTernaryOperator"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"/>
+    <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
 
+    <!-- <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit">
+        <properties>
+            <property name="ignoreStandaloneIfInScope" value="0" />
+        </properties>
+    </rule> -->
     <!--<rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>-->
     <!--<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>-->
-    <!--<rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>-->
-    <!--<rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>-->
-    <!--<rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>-->
+    <!-- <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/> -->
+    <!-- <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/> -->
     <!--<rule ref="SlevomatCodingStandard.Functions.UnusedParameter"/>-->
-    <!--<rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>-->
-
+    
     <!--
        If you want to completely disable an error message in a sniff
        but you don't want to exclude the whole sniff, you can
-       change the severity of the message to 0. In this case, we
-       want the Squiz DoubleQuoteUsage sniff to be included in our
-       standard, but we don't want the ContainsVar error message to
-       ever be displayed.
+       change the severity of the message to 0.
     -->
     <rule ref="Squiz.PHP.CommentedOutCode">
         <severity>1</severity>
