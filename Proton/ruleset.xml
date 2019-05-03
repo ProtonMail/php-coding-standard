@@ -4,13 +4,22 @@
         Proton PHP Coding Standard
     </description>
 
-    <rule ref="PSR2" />
+    <rule ref="PSR2">
+        <!-- Checked by SlevomatCodingStandard.Namespaces.UseSpacing -->
+        <exclude name="PSR2.Namespaces.UseDeclaration.SpaceAfterLastUse"/>
+        <!-- Checked by SlevomatCodingStandard.Namespaces.NamespaceSpacing -->
+        <exclude name="PSR2.Namespaces.NamespaceDeclaration.BlankLineAfter"/>
+    </rule>
+
     <rule ref="PSR2.Namespaces.UseDeclaration">
         <!-- Allows compound namespaces -->
         <exclude-pattern>*</exclude-pattern>
     </rule>
+
     <rule ref="PSR12.Namespaces.CompoundNamespaceDepth"/>
     <rule ref="PSR12.Functions.NullableTypeDeclaration"/>
+
+    <rule ref="PEAR.Commenting.InlineComment"/>
 
     <rule ref="Generic.Commenting.Todo"/>
     <rule ref="Generic.PHP.LowerCaseKeyword"/>
@@ -21,9 +30,12 @@
     <rule ref="Generic.CodeAnalysis.UselessOverridingMethod"/>
     <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
     <rule ref="Generic.CodeAnalysis.EmptyPHPStatement"/>
+    <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
     <rule ref="Generic.Classes.DuplicateClassName"/>
     <rule ref="Generic.WhiteSpace.IncrementDecrementSpacing"/>
     <rule ref="Generic.VersionControl.GitMergeConflict" />
+    <rule ref="Generic.Files.OneClassPerFile"/>
+    <rule ref="Generic.Files.OneInterfacePerFile"/>
 
     <!-- All PHP files MUST use the Unix LF (linefeed) line ending only. -->
     <rule ref="Generic.Files.LineEndings">
@@ -41,6 +53,12 @@
                 <element key="print" value="echo"/>
                 <element key="phpinfo" value="null"/>
                 <element key="create_function" value="null"/>
+                <element key="doubleval" value="floatval"/>
+                <element key="is_real" value="is_float"/>
+                <element key="is_integer" value="is_int"/>
+                <element key="is_double" value="is_float"/>
+                <element key="join" value="implode"/>
+                <element key="chop" value="rtrim"/>
 
                 <!-- Use `::class` keyword -->
                 <element key="get_called_class" value="`static::class`"/>
@@ -69,8 +87,21 @@
         </properties>
     </rule>
 
+    <rule ref="Generic.Metrics.CyclomaticComplexity">
+        <properties>
+            <property name="complexity" value="15"/>
+            <property name="absoluteComplexity" value="25"/>
+        </properties>
+    </rule>
+
     <rule ref="Squiz.PHP.NonExecutableCode"/>
     <rule ref="Squiz.PHP.LowercasePHPFunctions"/>
+    <!-- Forbid spaces around `->` operator -->
+    <rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing">
+        <properties>
+            <property name="ignoreNewlines" value="true"/>
+        </properties>
+    </rule>
 
     <!-- <rule ref="Squiz.Strings.ConcatenationSpacing">
         <properties>
@@ -115,6 +146,7 @@
     <rule ref="SlevomatCodingStandard.TypeHints.LongTypeHints"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition"/>
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenComments"/>
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
     <rule ref="SlevomatCodingStandard.Operators.SpreadOperatorSpacing">
@@ -137,7 +169,7 @@
     <!-- <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/> -->
     <!-- <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/> -->
     <!--<rule ref="SlevomatCodingStandard.Functions.UnusedParameter"/>-->
-    
+
     <!--
        If you want to completely disable an error message in a sniff
        but you don't want to exclude the whole sniff, you can
