@@ -33,7 +33,7 @@
     <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
     <rule ref="Generic.Classes.DuplicateClassName"/>
     <rule ref="Generic.WhiteSpace.IncrementDecrementSpacing"/>
-    <rule ref="Generic.VersionControl.GitMergeConflict" />
+    <rule ref="Generic.VersionControl.GitMergeConflict"/>
     <rule ref="Generic.Files.OneClassPerFile"/>
     <rule ref="Generic.Files.OneInterfacePerFile"/>
 
@@ -48,6 +48,7 @@
     <rule ref="Generic.PHP.ForbiddenFunctions">
         <properties>
             <property name="forbiddenFunctions" type="array">
+                <element key="close" value="closedir"/>
                 <element key="sizeof" value="count"/>
                 <element key="delete" value="unset"/>
                 <element key="print" value="echo"/>
@@ -57,8 +58,10 @@
                 <element key="is_real" value="is_float"/>
                 <element key="is_integer" value="is_int"/>
                 <element key="is_double" value="is_float"/>
+                <element key="is_long" value="is_int"/>
                 <element key="join" value="implode"/>
                 <element key="chop" value="rtrim"/>
+                <element key="key_exists" value="array_key_exists"/>
 
                 <!-- Use `::class` keyword -->
                 <element key="get_called_class" value="`static::class`"/>
@@ -96,6 +99,7 @@
 
     <rule ref="Squiz.PHP.NonExecutableCode"/>
     <rule ref="Squiz.PHP.LowercasePHPFunctions"/>
+    <rule ref="Squiz.Operators.ValidLogicalOperators"/> <!-- require `&&` and `||`, not `AND` and `OR` -->
     <!-- Forbid spaces around `->` operator -->
     <rule ref="Squiz.WhiteSpace.ObjectOperatorSpacing">
         <properties>
@@ -105,8 +109,8 @@
 
     <!-- <rule ref="Squiz.Strings.ConcatenationSpacing">
         <properties>
-            <property name="spacing" value="1" />
-            <property name="ignoreNewlines" value="true" />
+            <property name="spacing" value="1"/>
+            <property name="ignoreNewlines" value="true"/>
         </properties>
     </rule> -->
 
@@ -137,6 +141,7 @@
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing"/>
+<!--    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>-->
     <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
     <rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
@@ -147,11 +152,12 @@
     <rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
     <rule ref="SlevomatCodingStandard.TypeHints.NullTypeHintOnLastPosition"/>
+    <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenComments"/>
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
     <rule ref="SlevomatCodingStandard.Operators.SpreadOperatorSpacing">
         <properties>
-            <property name="spacesCountAfterOperator" value="0" />
+            <property name="spacesCountAfterOperator" value="0"/>
         </properties>
     </rule>
     <rule ref="SlevomatCodingStandard.ControlStructures.RequireNullCoalesceOperator"/>
@@ -159,15 +165,16 @@
     <rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"/>
     <rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
 
+    <rule ref="Squiz.Arrays.ArrayBracketSpacing"/>
+    <rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
+
     <!-- <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit">
         <properties>
-            <property name="ignoreStandaloneIfInScope" value="0" />
+            <property name="ignoreStandaloneIfInScope" value="0"/>
         </properties>
     </rule> -->
     <!--<rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>-->
     <!--<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>-->
-    <!-- <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/> -->
-    <!-- <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/> -->
     <!--<rule ref="SlevomatCodingStandard.Functions.UnusedParameter"/>-->
 
     <!--
