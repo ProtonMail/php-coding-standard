@@ -1,9 +1,10 @@
 {
     "name": "protonlabs/php-coding-standard",
-    "description": "ProtonMail Coding Standard",
+    "description": "ProtonLabs Coding Standard",
     "type": "phpcodesniffer-standard",
     "keywords": [
-        "php-codesniffer", "coding-standard"
+        "php-codesniffer",
+        "coding-standard"
     ],
     "homepage": "https://github.com/ProtonMail/php-coding-standard",
     "minimum-stability": "dev",
@@ -11,7 +12,7 @@
     "require": {
         "php": "^7.1",
         "slevomat/coding-standard": "^5.0",
-        "squizlabs/php_codesniffer": "^3.4"
+        "squizlabs/php_codesniffer": "^3.5"
     },
     "license": "MIT"
 }
