@@ -16,6 +16,7 @@
     <rule ref="PEAR.Commenting.InlineComment"/>
 
     <rule ref="Generic.Commenting.Todo"/>
+    <rule ref="Generic.PHP.BacktickOperator"/>
     <rule ref="Generic.PHP.LowerCaseKeyword"/>
     <rule ref="Generic.PHP.DeprecatedFunctions"/>
     <rule ref="Generic.Formatting.SpaceAfterCast"/>
@@ -48,6 +49,7 @@
     <rule ref="Generic.PHP.ForbiddenFunctions">
         <properties>
             <property name="forbiddenFunctions" type="array">
+                <element key="chop" value="rtrim"/>
                 <element key="close" value="closedir"/>
                 <element key="sizeof" value="count"/>
                 <element key="delete" value="unset"/>
@@ -85,8 +87,8 @@
 
     <rule ref="Generic.Metrics.NestingLevel">
         <properties>
-            <property name="nestingLevel" value="5"/>
-            <property name="absoluteNestingLevel" value="8"/>
+            <property name="nestingLevel" value="4"/>
+            <property name="absoluteNestingLevel" value="6"/>
         </properties>
     </rule>
 

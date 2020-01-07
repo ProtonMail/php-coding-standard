@@ -3,6 +3,7 @@
     "description": "ProtonLabs Coding Standard",
     "type": "phpcodesniffer-standard",
     "keywords": [
+        "protonlabs",
         "php-codesniffer",
         "coding-standard"
     ],
@@ -11,7 +12,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^7.1",
-        "slevomat/coding-standard": "^5.0",
+        "slevomat/coding-standard": "^5.0|^6.0",
         "squizlabs/php_codesniffer": "^3.5"
     },
     "license": "MIT"
