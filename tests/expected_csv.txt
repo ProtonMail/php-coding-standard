@@ -1,0 +1,42 @@
+Line,Column,Type,Source
+4,10,error,PSR2.Files.EndFileNewline.NoneFound
+1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
+6,12,warning,Generic.Metrics.NestingLevel.TooHigh
+5,20,error,PSR2.Classes.ClassDeclaration.OpenBraceNewLine
+21,11,error, found 10"
+20,9,warning,Generic.CodeAnalysis.UnconditionalIfStatement.Found
+20,9,error,SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn.UselessIfCondition
+1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
+8,1,error, found 1."
+6,18,error,PSR12.Files.FileHeader.SpacingInsideBlock
+40,1,error,PSR2.Files.EndFileNewline.NoneFound
+4,1,error, found 2."
+38,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
+37,13,warning,Squiz.PHP.NonExecutableCode.Unreachable
+37,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
+36,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
+35,9,error,Generic.PHP.LowerCaseKeyword.Found
+35,9,error,Squiz.ControlStructures.LowercaseDeclaration.FoundUppercase
+35,9,error,Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword
+35,12,error,Squiz.NamingConventions.ValidVariableName.NotCamelCaps
+35,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
+33,9,error,Squiz.NamingConventions.ValidVariableName.NotCamelCaps
+33,24,warning,Generic.CodeAnalysis.EmptyPHPStatement.SemicolonWithoutCodeDetected
+33,24,error,SlevomatCodingStandard.PHP.UselessSemicolon.UselessSemicolon
+33,24,error,Generic.Formatting.DisallowMultipleStatements.SameLine
+33,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
+31,31,error,Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine
+31,13,error,SlevomatCodingStandard.Classes.UnusedPrivateElements.UnusedMethod
+27,27,error,PSR12.Classes.AnonClassDeclaration.SpaceAfterKeyword
+24,13,error,SlevomatCodingStandard.Arrays.TrailingArrayComma.MissingTrailingComma
+20,19,error,Generic.PHP.BacktickOperator.Found
+20,14,error,Generic.PHP.BacktickOperator.Found
+16,5,error,PSR12.Traits.UseDeclaration.UseAfterBrace
+16,16,error,PSR12.Traits.UseDeclaration.MultipleImport
+14,5,warning,PSR12.Properties.ConstantVisibility.NotFound
+12,13,error,Squiz.NamingConventions.ValidVariableName.MemberNotCamelCaps
+12,13,error,SlevomatCodingStandard.Classes.UnusedPrivateElements.UnusedProperty
+12,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
+10,27,error,SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.IncorrectEmptyLinesAfterOpeningBrace
+10,27,error,PSR2.Classes.ClassDeclaration.OpenBraceNewLine
+1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
