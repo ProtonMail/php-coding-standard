@@ -19,6 +19,7 @@ abstract final class Test {
     {
         echo `test`;
 
+        phpinfo2();
 
         print_r([
             1

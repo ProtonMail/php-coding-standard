@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ruleset name="ProtonLabs PHP CodeSniffer Standard">
+    <description>
+        Proton PHP Coding Standard
+    </description>
+
+    <config name="installed_paths" value="../Proton"/>
+
+    <rule ref="Proton"/>
+
+    <rule ref="Proton.CodingStandard.ForbiddenNamespacedFunctions">
+        <properties>
+            <property name="forbiddenFunctions" type="array">
+                <element key="phpinfo2" value="\Proton\Support\phpinfo2"/>
+            </property>
+        </properties>
+    </rule>
+</ruleset>
