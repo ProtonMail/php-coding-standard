@@ -8,7 +8,7 @@
 
     <rule ref="Proton"/>
 
-    <rule ref="Proton.CodingStandard.ForbiddenNamespacedFunctions">
+    <rule ref="Proton.Architecture.ForbiddenNamespacedFunctions">
         <properties>
             <property name="forbiddenFunctions" type="array">
                 <element key="phpinfo2" value="\Proton\Support\phpinfo2"/>

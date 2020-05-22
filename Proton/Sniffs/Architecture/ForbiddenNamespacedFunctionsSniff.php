@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Proton\Sniffs\CodingStandard;
+namespace Proton\Sniffs\Architecture;
 
 use PHP_CodeSniffer\Standards\Generic\Sniffs\PHP\ForbiddenFunctionsSniff;
 use SlevomatCodingStandard\Helpers\NamespaceHelper;

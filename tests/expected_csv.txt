@@ -29,7 +29,7 @@ Line,Column,Type,Source
 32,13,error,SlevomatCodingStandard.Classes.UnusedPrivateElements.UnusedMethod
 28,27,error,PSR12.Classes.AnonClassDeclaration.SpaceAfterKeyword
 25,13,error,SlevomatCodingStandard.Arrays.TrailingArrayComma.MissingTrailingComma
-22,9,error,Proton.CodingStandard.ForbiddenNamespacedFunctions.FoundWithAlternative
+22,9,error,Proton.Architecture.ForbiddenNamespacedFunctions.FoundWithAlternative
 20,19,error,Generic.PHP.BacktickOperator.Found
 20,14,error,Generic.PHP.BacktickOperator.Found
 16,5,error,PSR12.Traits.UseDeclaration.UseAfterBrace
