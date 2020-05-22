@@ -11,8 +11,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
-        "test-print": "phpcs --standard=Proton/ruleset.xml --report=summary tests",
-        "test": "phpcs --standard=Proton/ruleset.xml --report=csv tests | sort -r | cut -f 2,3,4,6 -d ',' > tests/out.csv; diff tests/expected_csv.txt tests/out.csv"
+        "test-print": "phpcs --standard=tests/phpcs.xml --report=summary tests",
+        "test": "phpcs --standard=tests/phpcs.xml --report=csv tests | sort -r | cut -f 2,3,4,6 -d ',' > tests/out.csv; diff tests/expected_csv.txt tests/out.csv"
     },
     "require": {
         "php": "^7.1",

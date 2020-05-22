@@ -3,11 +3,11 @@ PHP CODE SNIFFER REPORT SUMMARY
 ------------------------------------------------------------------------------------------------
 FILE                                                                            ERRORS  WARNINGS
 ------------------------------------------------------------------------------------------------
-/Users/Username/dev/Proton/php-coding-standard/tests/wrong/Class1.php           30      0
-/Users/Username/dev/Proton/php-coding-standard/tests/wrong/ClassMetrics.php     4       0
+/Users/Username/dev/Proton/php-coding-standard/tests/wrong/Class1.php           31      3
+/Users/Username/dev/Proton/php-coding-standard/tests/wrong/ClassMetrics.php     4       2
 /Users/Username/dev/Proton/php-coding-standard/tests/wrong/file.php             2       0
 ------------------------------------------------------------------------------------------------
-A TOTAL OF 36 ERRORS AND 0 WARNINGS WERE FOUND IN 3 FILES
+A TOTAL OF 37 ERRORS AND 5 WARNINGS WERE FOUND IN 3 FILES
 ------------------------------------------------------------------------------------------------
-PHPCBF CAN FIX 28 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX 29 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------------

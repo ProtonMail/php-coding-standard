@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Proton\Test;
 
 use Proton\Http\Request;
+use function Proton\Support\phpinfo2;
 
 final class ClassOk
 {
@@ -21,6 +22,8 @@ final class ClassOk
         $this->foo = $config + [
             'foo' => 'bar',
         ];
+
+        phpinfo2();
     }
 
     public function ping(Request $request)
