@@ -9,7 +9,15 @@ Line,Column,Type,Source
 1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
 8,1,error, found 1."
 6,18,error,PSR12.Files.FileHeader.SpacingInsideBlock
-41,1,error,PSR2.Files.EndFileNewline.NoneFound
+54,1,error,PSR2.Files.EndFileNewline.NoneFound
+50,54,error,SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing.WhitespaceBeforeColon
+50,52,error,PSR12.Functions.ReturnTypeDeclaration.SpaceBeforeColon
+50,20,warning,Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed
+50,20,error,PSR1.Methods.CamelCapsMethodName.NotCamelCaps
+48,8,error,SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration.MissingDescription
+43,13,error,SlevomatCodingStandard.Functions.TrailingCommaInCall.MissingTrailingComma
+42,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
+41,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
 4,1,error, found 2."
 39,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
 38,13,warning,Squiz.PHP.NonExecutableCode.Unreachable
