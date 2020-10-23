@@ -37,5 +37,18 @@ abstract final class Test {
     		return true;
     		return true;
     	}
+
+    	$this->foo(
+    	    'a',
+            2
+        );
+    }
+
+    /**
+     * @deprecated
+     */
+    private static function Foo(string $a, $b, $c) : array
+    {
+        return [$a, $b];
     }
 }

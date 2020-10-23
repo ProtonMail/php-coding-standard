@@ -95,7 +95,7 @@
     <rule ref="Generic.Metrics.CyclomaticComplexity">
         <properties>
             <property name="complexity" value="15"/>
-            <property name="absoluteComplexity" value="25"/>
+            <property name="absoluteComplexity" value="20"/>
         </properties>
     </rule>
 
@@ -141,6 +141,7 @@
     <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
     <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/>
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
+    <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall" />
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing"/>
 <!--    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>-->
@@ -157,6 +158,12 @@
     <rule ref="SlevomatCodingStandard.TypeHints.NullableTypeForNullDefaultValue"/>
     <rule ref="SlevomatCodingStandard.Commenting.ForbiddenComments"/>
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
+    <rule ref="SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration"/>
+    <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration">
+        <properties>
+            <property name="allowAboveNonAssignment" value="true"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Operators.SpreadOperatorSpacing">
         <properties>
             <property name="spacesCountAfterOperator" value="0"/>

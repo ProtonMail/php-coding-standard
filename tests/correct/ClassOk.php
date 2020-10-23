@@ -28,18 +28,34 @@ final class ClassOk
 
     public function ping(Request $request)
     {
+        $this->foo(
+            'a',
+            'b',
+        );
+
         return $request->query->get('test');
     }
 
+    /**
+     * @deprecated This is a message
+     * @return bool|string
+     */
     public function foo(string $a, string $b)
     {
         $a = $a . 'test';
+
+        if ($a === $b) {
+            return true;
+        }
+
+        /** @var string|null $foo */
+        $foo = $this->foo['a'] ?? null;
 
         if (
             $a === 'a'
             || $b === 'b'
         ) {
-            return $a;
+            return $foo;
         }
 
         return false;
