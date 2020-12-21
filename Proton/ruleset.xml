@@ -204,6 +204,8 @@
         <severity>1</severity>
     </rule>
 
+    <rule ref="Proton.Spacing.ArrowFunctionSpacing"/>
+
     <exclude-pattern>*/node_modules/*</exclude-pattern>
     <exclude-pattern>*/vendor/*</exclude-pattern>
     <exclude-pattern>*/reports/*</exclude-pattern>
