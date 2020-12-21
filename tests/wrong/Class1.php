@@ -27,6 +27,8 @@ abstract final class Test {
 
         $this->test = new class() {
         };
+
+        call_user_func(fn() => {});
     }
 
     private function unused() {

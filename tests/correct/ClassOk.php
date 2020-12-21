@@ -24,6 +24,8 @@ final class ClassOk
         ];
 
         phpinfo2();
+
+        call_user_func(fn () => {});
     }
 
     public function ping(Request $request)
