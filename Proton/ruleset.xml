@@ -74,6 +74,9 @@
                 <element key="intval" value="(int)"/>
                 <element key="floatval" value="(float)"/>
                 <element key="boolval" value="(bool)"/>
+
+                <!-- Use framework alternative -->
+                <element key="setcookie" value="`Response::withCookie()`"/>
             </property>
         </properties>
     </rule>
