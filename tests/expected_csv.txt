@@ -15,7 +15,7 @@ Line,Column,Type,Source
 52,20,warning,Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed
 52,20,error,PSR1.Methods.CamelCapsMethodName.NotCamelCaps
 50,8,error,SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration.MissingDescription
-45,13,error,SlevomatCodingStandard.Functions.TrailingCommaInCall.MissingTrailingComma
+45,13,error,SlevomatCodingStandard.Functions.RequireTrailingCommaInCall.MissingTrailingComma
 44,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
 43,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
 41,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
@@ -34,7 +34,6 @@ Line,Column,Type,Source
 36,24,error,Generic.Formatting.DisallowMultipleStatements.SameLine
 36,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
 34,31,error,Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine
-34,13,error,SlevomatCodingStandard.Classes.UnusedPrivateElements.UnusedMethod
 31,24,error,Proton.Spacing.ArrowFunctionSpacing.Found
 28,27,error,PSR12.Classes.AnonClassDeclaration.SpaceAfterKeyword
 25,13,error,SlevomatCodingStandard.Arrays.TrailingArrayComma.MissingTrailingComma
@@ -45,8 +44,8 @@ Line,Column,Type,Source
 16,16,error,PSR12.Traits.UseDeclaration.MultipleImport
 14,5,warning,PSR12.Properties.ConstantVisibility.NotFound
 12,13,error,Squiz.NamingConventions.ValidVariableName.MemberNotCamelCaps
-12,13,error,SlevomatCodingStandard.Classes.UnusedPrivateElements.UnusedProperty
 12,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
 10,27,error,SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.IncorrectEmptyLinesAfterOpeningBrace
 10,27,error,PSR2.Classes.ClassDeclaration.OpenBraceNewLine
+10,27,error,PSR12.Classes.OpeningBraceSpace.Found
 1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
