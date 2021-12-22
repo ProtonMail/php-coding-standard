@@ -30,10 +30,14 @@ final class ClassOk
 
     public function ping(Request $request)
     {
-        $this->foo(
-            'a',
-            'b',
-        );
+        try {
+            $this->foo(
+                'a',
+                'b',
+            );
+        } catch (\RuntimeException) {
+            // ...
+        }
 
         return $request->query->get('test');
     }
@@ -60,6 +64,21 @@ final class ClassOk
             return $foo;
         }
 
+        if ($a === 'z') {
+            throw new \RuntimeException();
+        }
+
         return false;
+    }
+
+    public static function create(
+        string $name,
+        string|int|float|null $defaultValue = null,
+    ): string|int|float|null|array|object {
+        return match ($name) {
+            'foo' => [1, 2, 3],
+            'bar' => [],
+            default => $defaultValue,
+        };
     }
 }

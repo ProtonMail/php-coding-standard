@@ -49,7 +49,7 @@ abstract final class Test {
     /**
      * @deprecated
      */
-    private static function Foo(string $a, $b, $c) : array
+    private static function Foo(string $a, $b, $c) : array |object
     {
         return [$a, $b];
     }

@@ -128,7 +128,6 @@
             <property name="ignoreComplexTernaryConditions" value="1"/>
         </properties>
     </rule>
-    <rule ref="SlevomatCodingStandard.Classes.UnusedPrivateElements"/>
     <rule ref="SlevomatCodingStandard.Classes.UselessLateStaticBinding"/>
     <rule ref="SlevomatCodingStandard.Classes.ModernClassNameReference"/>
     <rule ref="SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces">
@@ -141,7 +140,7 @@
     <rule ref="SlevomatCodingStandard.Variables.UselessVariable"/>
     <rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/>
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
-    <rule ref="SlevomatCodingStandard.Functions.TrailingCommaInCall" />
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall" />
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing"/>
 <!--    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>-->
@@ -185,6 +184,10 @@
             <property name="newlinesCountAfterDeclare" value="2"/>
         </properties>
     </rule>
+    <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat"/>
+
+    <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch"/>
+    <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration"/>
 
     <!-- <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit">
         <properties>
