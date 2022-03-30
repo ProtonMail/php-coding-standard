@@ -9,7 +9,7 @@ use PHP_CodeSniffer\Sniffs\Sniff;
 
 class ArrowFunctionSpacingSniff implements Sniff
 {
-    public function register()
+    public function register(): array
     {
         return [T_FN];
     }

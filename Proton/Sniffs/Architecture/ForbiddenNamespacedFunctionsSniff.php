@@ -9,7 +9,7 @@ use SlevomatCodingStandard\Helpers\NamespaceHelper;
 
 class ForbiddenNamespacedFunctionsSniff extends ForbiddenFunctionsSniff
 {
-    protected function addError($phpcsFile, $stackPtr, $function, $pattern = null)
+    protected function addError($phpcsFile, $stackPtr, $function, $pattern = null): void
     {
         $fqfn = NamespaceHelper::resolveName($phpcsFile, $function, 'function', $stackPtr);
         $canonicalName = NamespaceHelper::normalizeToCanonicalName($fqfn);
