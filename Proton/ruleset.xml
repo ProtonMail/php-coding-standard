@@ -142,6 +142,7 @@
     <rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall" />
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
+    <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing"/>
 <!--    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>-->
     <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
