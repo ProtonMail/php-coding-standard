@@ -53,4 +53,9 @@ abstract final class Test {
     {
         return [$a, $b];
     }
+
+    private function testUnion(null|float|int|string $a,): null|int|float
+    {
+        return 1;
+    }
 }

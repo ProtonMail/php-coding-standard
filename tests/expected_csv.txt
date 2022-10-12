@@ -8,9 +8,13 @@ Line,Column,Type,Source
 20,9,error,SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn.UselessIfCondition
 1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
 8,1,error, found 1."
+61,1,error,PSR2.Files.EndFileNewline.NoneFound
 6,18,error,PSR12.Files.FileHeader.SpacingInsideBlock
-56,1,error,PSR2.Files.EndFileNewline.NoneFound
+57,60,error,SlevomatCodingStandard.TypeHints.UnionTypeHintFormat.NullTypeHintNotOnLastPosition
+57,32,error,SlevomatCodingStandard.TypeHints.UnionTypeHintFormat.NullTypeHintNotOnLastPosition
+57,13,warning,Generic.CodeAnalysis.UnusedFunctionParameter.Found
 52,54,error,SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing.WhitespaceBeforeColon
+52,54,error,SlevomatCodingStandard.TypeHints.UnionTypeHintFormat.DisallowedWhitespace
 52,52,error,PSR12.Functions.ReturnTypeDeclaration.SpaceBeforeColon
 52,20,warning,Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed
 52,20,error,PSR1.Methods.CamelCapsMethodName.NotCamelCaps
@@ -41,6 +45,7 @@ Line,Column,Type,Source
 20,19,error,Generic.PHP.BacktickOperator.Found
 20,14,error,Generic.PHP.BacktickOperator.Found
 16,5,error,PSR12.Traits.UseDeclaration.UseAfterBrace
+16,5,error,SlevomatCodingStandard.Classes.TraitUseDeclaration.MultipleTraitsPerDeclaration
 16,16,error,PSR12.Traits.UseDeclaration.MultipleImport
 14,5,warning,PSR12.Properties.ConstantVisibility.NotFound
 12,13,error,Squiz.NamingConventions.ValidVariableName.MemberNotCamelCaps
