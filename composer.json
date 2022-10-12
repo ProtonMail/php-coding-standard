@@ -16,8 +16,13 @@
     },
     "require": {
         "php": "^7.4 || ^8.0",
-        "slevomat/coding-standard": "^7.0",
-        "squizlabs/php_codesniffer": "^3.6"
+        "slevomat/coding-standard": "^8.0",
+        "squizlabs/php_codesniffer": "^3.7"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
 }

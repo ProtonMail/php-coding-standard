@@ -10,12 +10,17 @@ use function Proton\Support\phpinfo2;
 final class ClassOk
 {
     use MyTrait;
+    use MyTrait2;
+
+    public const FOO_1 = 'A';
+    public const FOO_2 = 'B';
 
     /**
      * Foo.
      * @var array
      */
     protected $foo = [];
+    private string $test = 'foo';
 
     public function __construct(array $config)
     {
@@ -72,9 +77,9 @@ final class ClassOk
     }
 
     public static function create(
-        string $name,
+        ?string $name,
         string|int|float|null $defaultValue = null,
-    ): string|int|float|null|array|object {
+    ): string|int|float|array|object|null {
         return match ($name) {
             'foo' => [1, 2, 3],
             'bar' => [],
