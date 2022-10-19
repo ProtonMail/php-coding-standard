@@ -47,6 +47,7 @@ abstract final class Test {
     }
 
     /**
+     * @param string $a
      * @deprecated
      */
     private static function Foo(string $a, $b, $c) : array |object
