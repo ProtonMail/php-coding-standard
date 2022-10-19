@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Proton\Test;
 
 use Proton\Http\Request;
+
 use function Proton\Support\phpinfo2;
 
 final class ClassOk
@@ -17,9 +18,8 @@ final class ClassOk
 
     /**
      * Foo.
-     * @var array
      */
-    protected $foo = [];
+    protected array $foo = [];
     private string $test = 'foo';
 
     public function __construct(array $config)
@@ -33,7 +33,7 @@ final class ClassOk
         call_user_func(fn () => {});
     }
 
-    public function ping(Request $request)
+    public function ping(Request $request): mixed
     {
         try {
             $this->foo(
@@ -49,9 +49,8 @@ final class ClassOk
 
     /**
      * @deprecated This is a message
-     * @return bool|string
      */
-    public function foo(string $a, string $b)
+    public function foo(string $a, string $b): bool|string
     {
         $a = $a . 'test';
 
