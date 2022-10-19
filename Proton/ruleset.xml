@@ -157,11 +157,18 @@
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration"/>
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
     <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
-    <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing"/>
 <!--    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>-->
     <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
     <rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
+    <!-- Require empty newlines before and after uses (PSR-12) -->
+    <rule ref="SlevomatCodingStandard.Namespaces.UseSpacing">
+        <properties>
+            <property name="linesCountAfterLastUse" value="1"/>
+            <property name="linesCountBeforeFirstUse" value="1"/>
+            <property name="linesCountBetweenUseTypes" value="1"/>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
     <rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
