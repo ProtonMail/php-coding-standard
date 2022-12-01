@@ -18,7 +18,7 @@ class InterfaceNameSniff implements Sniff
     public function process(File $phpcsFile, $stackPtr)
     {
         $tokens = $phpcsFile->getTokens();
-        
+
         if ($tokens[$stackPtr]['code'] === T_INTERFACE) {
             $namePointer = TokenHelper::findNext($phpcsFile, T_STRING, $stackPtr + 1);
             $className   = $tokens[$namePointer]['content'];
