@@ -2,7 +2,7 @@ name: PHP Composer CI
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, naming-sniffs ]
   pull_request:
     branches: [ master ]
 
