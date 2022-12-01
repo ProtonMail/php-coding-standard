@@ -1,6 +1,8 @@
 Line,Column,Type,Source
 4,10,error,PSR2.Files.EndFileNewline.NoneFound
 1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
+7,11,error,Proton.Naming.InterfaceName.Found
+7,16,error,Proton.Naming.AbstractClassName.Found
 6,12,warning,Generic.Metrics.NestingLevel.TooHigh
 6,12,error,SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingAnyTypeHint
 6,12,error,SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingAnyTypeHint
