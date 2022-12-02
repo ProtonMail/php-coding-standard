@@ -10,12 +10,12 @@ use SlevomatCodingStandard\Helpers\TokenHelper;
 
 class InterfaceNameSniff implements Sniff
 {
-    public function register()
+    public function register(): array
     {
         return [T_INTERFACE];
     }
 
-    public function process(File $phpcsFile, $stackPtr)
+    public function process(File $phpcsFile, $stackPtr): void
     {
         $tokens = $phpcsFile->getTokens();
 
@@ -27,7 +27,7 @@ class InterfaceNameSniff implements Sniff
                 $phpcsFile->addError(
                     'An interface should always end with `Interface`',
                     $namePointer,
-                    'Found'
+                    'Found',
                 );
             }
         }

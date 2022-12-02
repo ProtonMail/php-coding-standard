@@ -10,12 +10,12 @@ use SlevomatCodingStandard\Helpers\TokenHelper;
 
 class AbstractClassNameSniff implements Sniff
 {
-    public function register()
+    public function register(): array
     {
         return [T_ABSTRACT];
     }
 
-    public function process(File $phpcsFile, $stackPtr)
+    public function process(File $phpcsFile, $stackPtr): void
     {
         $tokens = $phpcsFile->getTokens();
 
@@ -26,7 +26,7 @@ class AbstractClassNameSniff implements Sniff
                 $phpcsFile->addError(
                     'An abstract class should always start with `Abstract`',
                     $namePointer,
-                    'Found'
+                    'Found',
                 );
             }
         }
