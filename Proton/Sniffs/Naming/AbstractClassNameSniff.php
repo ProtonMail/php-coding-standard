@@ -32,7 +32,6 @@ class AbstractClassNameSniff implements Sniff
             $name = trim($phpcsFile->getTokensAsString($nameStart, ($nameEnd - $nameStart)));
         }
 
-
         if (substr($name, 0, 8) !== 'Abstract') {
             $phpcsFile->addError(
                 'An abstract class should always start with `Abstract`',
