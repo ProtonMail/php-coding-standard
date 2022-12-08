@@ -12,23 +12,32 @@ class AbstractClassNameSniff implements Sniff
 {
     public function register(): array
     {
-        return [T_ABSTRACT];
+        return [T_CLASS];
     }
 
     public function process(File $phpcsFile, $stackPtr): void
     {
+        if (!TokenHelper::findPrevious($phpcsFile, T_ABSTRACT, $stackPtr)) {
+            return;
+        }
+
         $tokens = $phpcsFile->getTokens();
 
-        if ($tokens[$stackPtr]['code'] === T_ABSTRACT) {
-            $namePointer = TokenHelper::findNext($phpcsFile, T_STRING, $stackPtr + 1);
+        $opener = $tokens[$stackPtr]['scope_opener'];
+        $nameStart = $phpcsFile->findNext(T_WHITESPACE, ($stackPtr + 1), $opener, true);
+        $nameEnd = $phpcsFile->findNext([T_WHITESPACE, T_COLON], $nameStart, $opener);
+        if ($nameEnd === false) {
+            $name = $tokens[$nameStart]['content'];
+        } else {
+            $name = trim($phpcsFile->getTokensAsString($nameStart, ($nameEnd - $nameStart)));
+        }
 
-            if (substr($tokens[$namePointer]['content'], 0, 8) !== 'Abstract') {
-                $phpcsFile->addError(
-                    'An abstract class should always start with `Abstract`',
-                    $namePointer,
-                    'Found',
-                );
-            }
+        if (substr($name, 0, 8) !== 'Abstract') {
+            $phpcsFile->addError(
+                'An abstract class should always start with `Abstract`',
+                $nameStart,
+                'Found',
+            );
         }
     }
 }

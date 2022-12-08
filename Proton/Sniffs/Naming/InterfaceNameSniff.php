@@ -19,17 +19,26 @@ class InterfaceNameSniff implements Sniff
     {
         $tokens = $phpcsFile->getTokens();
 
-        if ($tokens[$stackPtr]['code'] === T_INTERFACE) {
-            $namePointer = TokenHelper::findNext($phpcsFile, T_STRING, $stackPtr + 1);
-            $className   = $tokens[$namePointer]['content'];
-
-            if (substr($className, strlen($className) - 9, 9) !== 'Interface') {
-                $phpcsFile->addError(
-                    'An interface should always end with `Interface`',
-                    $namePointer,
-                    'Found',
-                );
-            }
+        if ($tokens[$stackPtr]['code'] !== T_INTERFACE) {
+            return;
         }
+
+        $opener = $tokens[$stackPtr]['scope_opener'];
+        $nameStart = $phpcsFile->findNext(T_WHITESPACE, ($stackPtr + 1), $opener, true);
+        $nameEnd = $phpcsFile->findNext([T_WHITESPACE, T_COLON], $nameStart, $opener);
+        if ($nameEnd === false) {
+            $name = $tokens[$nameStart]['content'];
+        } else {
+            $name = trim($phpcsFile->getTokensAsString($nameStart, ($nameEnd - $nameStart)));
+        }
+
+        if (substr($name, strlen($name) - 9, 9) !== 'Interface') {
+            $phpcsFile->addError(
+                'An interface should always end with `Interface`',
+                $nameStart,
+                'Found',
+            );
+        }
+
     }
 }
