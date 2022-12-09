@@ -1,6 +1,7 @@
 Line,Column,Type,Source
 4,10,error,PSR2.Files.EndFileNewline.NoneFound
 1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
+7,1,error,Generic.NamingConventions.TraitNameSuffix.Missing
 7,1,error,Generic.NamingConventions.InterfaceNameSuffix.Missing
 8,1,error,SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.IncorrectEmptyLinesAfterOpeningBrace
 8,1,error,PSR12.Classes.OpeningBraceSpace.Found
