@@ -1,15 +1,15 @@
 
 PHP CODE SNIFFER REPORT SUMMARY
-------------------------------------------------------------------------------------------------
-FILE                                                                            ERRORS  WARNINGS
-------------------------------------------------------------------------------------------------
-/Users/Username/dev/Proton/php-coding-standard/tests/wrong/Class1.php                 39      4
-/Users/Username/dev/Proton/php-coding-standard/tests/wrong/ClassMetrics.php           4       2
-/Users/Username/dev/Proton/php-coding-standard/tests/wrong/ClassWrongAbstract.php     1       0
+------------------------------------------------------------------------------------------------------
+FILE                                                                                  ERRORS  WARNINGS
+------------------------------------------------------------------------------------------------------
+/Users/Username/dev/Proton/php-coding-standard/tests/wrong/Class1.php                 51      6
+/Users/Username/dev/Proton/php-coding-standard/tests/wrong/ClassMetrics.php           11      2
+/Users/Username/dev/Proton/php-coding-standard/tests/wrong/ClassWrongAbstract.php     3       0
 /Users/Username/dev/Proton/php-coding-standard/tests/wrong/file.php                   2       0
 /Users/Username/dev/Proton/php-coding-standard/tests/wrong/InterfaceWrong.php         1       0
-------------------------------------------------------------------------------------------------
-A TOTAL OF 39 ERRORS AND 5 WARNINGS WERE FOUND IN 5 FILES
-------------------------------------------------------------------------------------------------
-PHPCBF CAN FIX 29 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+A TOTAL OF 68 ERRORS AND 8 WARNINGS WERE FOUND IN 5 FILES
+------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX 43 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------------------------

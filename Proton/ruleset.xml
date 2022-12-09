@@ -26,12 +26,15 @@
     <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
     <rule ref="Generic.CodeAnalysis.EmptyPHPStatement"/>
     <rule ref="Generic.CodeAnalysis.UnnecessaryFinalModifier"/>
+    <rule ref="Generic.CodeAnalysis.AssignmentInCondition"/>
     <rule ref="Generic.Classes.DuplicateClassName"/>
     <rule ref="Generic.WhiteSpace.IncrementDecrementSpacing"/>
     <rule ref="Generic.WhiteSpace.SpreadOperatorSpacingAfter"/>
     <rule ref="Generic.VersionControl.GitMergeConflict"/>
     <rule ref="Generic.Files.OneClassPerFile"/>
     <rule ref="Generic.Files.OneInterfacePerFile"/>
+    <rule ref="Generic.NamingConventions.InterfaceNameSuffix"/>
+    <rule ref="Generic.NamingConventions.AbstractClassNamePrefix"/>
 
     <!-- Naming conventions -->
     <rule ref="Squiz.NamingConventions.ValidVariableName.NotCamelCaps"/>
@@ -99,6 +102,7 @@
         </properties>
     </rule>
 
+    <rule ref="Squiz.PHP.DisallowMultipleAssignments"/>
     <rule ref="Squiz.PHP.NonExecutableCode"/>
     <rule ref="Squiz.PHP.LowercasePHPFunctions"/>
     <rule ref="Squiz.Operators.ValidLogicalOperators"/> <!-- require `&&` and `||`, not `AND` and `OR` -->
@@ -247,8 +251,6 @@
     </rule>
 
     <rule ref="Proton.Spacing.ArrowFunctionSpacing"/>
-    <rule ref="Proton.Naming.AbstractClassName"/>
-    <rule ref="Proton.Naming.InterfaceName"/>
 
     <exclude-pattern>*/node_modules/*</exclude-pattern>
     <exclude-pattern>*/vendor/*</exclude-pattern>

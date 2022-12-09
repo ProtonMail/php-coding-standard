@@ -9,11 +9,17 @@ use PHP_CodeSniffer\Sniffs\Sniff;
 
 class ArrowFunctionSpacingSniff implements Sniff
 {
+    /**
+     * @inheritDoc
+     */
     public function register(): array
     {
         return [T_FN];
     }
 
+    /**
+     * @inheritDoc
+     */
     public function process(File $phpcsFile, $stackPtr)
     {
         $tokens = $phpcsFile->getTokens();
@@ -22,7 +28,7 @@ class ArrowFunctionSpacingSniff implements Sniff
             $phpcsFile->addError(
                 'The fn arrow function token should always be followed by a space.',
                 $stackPtr,
-                'Found'
+                'Found',
             );
         }
     }
