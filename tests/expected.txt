@@ -8,8 +8,9 @@ FILE                                                                            
 /Users/Username/dev/Proton/php-coding-standard/tests/wrong/ClassWrongAbstract.php     3       0
 /Users/Username/dev/Proton/php-coding-standard/tests/wrong/file.php                   2       0
 /Users/Username/dev/Proton/php-coding-standard/tests/wrong/InterfaceWrong.php         1       0
+/Users/Username/dev/Proton/php-coding-standard/tests/wrong/TraitInvalid.php           1       0
 ------------------------------------------------------------------------------------------------------
-A TOTAL OF 68 ERRORS AND 8 WARNINGS WERE FOUND IN 5 FILES
+A TOTAL OF 69 ERRORS AND 8 WARNINGS WERE FOUND IN 6 FILES
 ------------------------------------------------------------------------------------------------------
 PHPCBF CAN FIX 43 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------------------
