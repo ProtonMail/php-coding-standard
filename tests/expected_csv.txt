@@ -1,10 +1,10 @@
 Line,Column,Type,Source
 4,10,error,PSR2.Files.EndFileNewline.NoneFound
 1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
-7,11,error,Proton.Naming.InterfaceName.Found
+7,1,error,Generic.NamingConventions.InterfaceNameSuffix.Missing
 8,1,error,SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.IncorrectEmptyLinesAfterOpeningBrace
 8,1,error,PSR12.Classes.OpeningBraceSpace.Found
-7,16,error,Proton.Naming.AbstractClassName.Found
+7,10,error,Generic.NamingConventions.AbstractClassNamePrefix.Missing
 6,12,warning,Generic.Metrics.NestingLevel.TooHigh
 6,12,error,SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingAnyTypeHint
 6,12,error,SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingAnyTypeHint
@@ -19,7 +19,11 @@ Line,Column,Type,Source
 20,9,error,SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn.UselessIfCondition
 1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
 8,1,error, found 1."
-62,1,error,PSR2.Files.EndFileNewline.NoneFound
+70,1,error,PSR2.Files.EndFileNewline.NoneFound
+68,23,error,Squiz.PHP.DisallowMultipleAssignments.Found
+64,27,warning,Generic.CodeAnalysis.AssignmentInCondition.Found
+64,27,error,Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure
+63,62,error,Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine
 6,18,error,PSR12.Files.FileHeader.SpacingInsideBlock
 58,60,error,SlevomatCodingStandard.TypeHints.UnionTypeHintFormat.NullTypeHintNotOnLastPosition
 58,32,error,SlevomatCodingStandard.TypeHints.UnionTypeHintFormat.NullTypeHintNotOnLastPosition
@@ -69,5 +73,5 @@ Line,Column,Type,Source
 10,27,error,SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.IncorrectEmptyLinesAfterOpeningBrace
 10,27,error,PSR2.Classes.ClassDeclaration.OpenBraceNewLine
 10,27,error,PSR12.Classes.OpeningBraceSpace.Found
-10,22,error,Proton.Naming.AbstractClassName.Found
+10,16,error,Generic.NamingConventions.AbstractClassNamePrefix.Missing
 1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
