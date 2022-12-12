@@ -13,7 +13,7 @@
     "scripts": {
         "test-fix": "phpcs --standard=phpcs.xml --report=diff tests > tests/out.diff && diff tests/out.diff tests/expected.diff",
         "test-print": "phpcs --standard=phpcs.xml --report=summary tests",
-        "test": "phpcs --standard=phpcs.xml --report=csv tests | sort -r | cut -f 2,3,4,6 -d ',' > tests/out.csv && cat tests/out.csv && diff tests/expected_csv.txt tests/out.csv"
+        "test": "phpcs --standard=phpcs.xml --report=csv tests | sort -r | cut -f 2,3,4,6 -d ',' > tests/out.csv && diff tests/expected_csv.txt tests/out.csv"
     },
     "require": {
         "php": "^7.4 || ^8.0",
