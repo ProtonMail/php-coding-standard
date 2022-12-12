@@ -18,10 +18,10 @@ abstract class ClassWrongAbstract
     /**
      * one getter.
      *
-     * Created by me
+     * Created by me.
      * User: me
      * Date: now
-     * Time: see date
+     * Time: now
      *
      */
     public function getOne(): int

@@ -1,0 +1,223 @@
+--- tests/wrong/file.php
++++ PHP_CodeSniffer
+@@ -1,4 +1,5 @@
+ <?php
+ 
+-/* */
+-return [];
+\ No newline at end of file
++declare(strict_types=1);
++
++return [];
+--- tests/wrong/Class1.php
++++ PHP_CodeSniffer
+@@ -1,19 +1,17 @@
+ <?php
+ 
++declare(strict_types=1);
+ 
+ namespace Test;
+ 
+-use Something\Foo;
+-
+-use Something\bar;
+-
+-abstract final class Test {
+-
+-	private $unused_field;
++abstract final class Test
++{
++    private $unused_field;
+ 
+     const TEST = 'NOTOK';
+ 
+-    use MyTrait, MyTrait2;
++    use MyTrait;
++    use MyTrait2;
+ 
+     public function __construct()
+     {
+@@ -22,49 +20,51 @@
+         phpinfo2();
+ 
+         print_r([
+-            1
+-          ]);
++            1,
++        ]);
+ 
+-        $this->test = new class() {
++        $this->test = new class () {
+         };
+ 
+         call_user_func(fn() => {});
+     }
+ 
+-    private function unused() {
++    private function unused()
++    {
+         $fooBar = 1;
+-    	$foo_bar = '1';;
++        $foo_bar = '1';
+ 
+-    	IF($foo_bar == '1') {
+-    		return true;
+-    		return true;
+-    	}
+-
+-    	$this->foo(
+-    	    'a',
+-            2
++
++        if ($foo_bar === '1') {
++            return true;
++            return true;
++        }
++
++        $this->foo(
++            'a',
++            2,
+         );
+     }
+ 
+     /**
+-     * @param string $a
+      * @deprecated
+      */
+-    private static function Foo(string $a, $b, $c) : array |object
++    private static function Foo(string $a, $b, $c): array|object
+     {
+         return [$a, $b];
+     }
+ 
+-    private function testUnion(null|float|int|string $a,): null|int|float
++    private function testUnion(float|int|string|null $a,): int|float|null
+     {
+         return 1;
+     }
+ 
+-    private function testAssignmentInCondition(int $a): void {
+-        if ($a == 1 && $b = 2) {
++    private function testAssignmentInCondition(int $a): void
++    {
++        if ($a === 1 && $b = 2) {
+             $c = 3;
+         }
+ 
+-        $c == 3 && $d = 4;
++        $c === 3 && $d = 4;
+     }
+-}
+\ No newline at end of file
++}
+--- tests/wrong/ClassWrongAbstract.php
++++ PHP_CodeSniffer
+@@ -2,48 +2,32 @@
+ 
+ declare(strict_types=1);
+ 
+-
+ namespace wrong;
+ 
+-use RuntimeException;
+-
+-/**
+- * Class ClassWrongAbstract
+- */
+ abstract class ClassWrongAbstract
+ {
+-
+     abstract public function setOne(int $one = 1): void;
+ 
+-    /**
+-     * one getter.
+-     *
+-     * Created by me.
+-     * User: me
+-     * Date: now
+-     * Time: now
+-     *
+-     */
+     public function getOne(): int
+     {
+-        //There should be a space separator
++        // There should be a space separator
+         return 1;
+     }
+ 
+-    #[Attribute1, Attribute2('var')]
+-    #[Attribute3(), Attribute4]
+     /**
+      * Method comment
+      */
++    #[Attribute1, Attribute2('var')]
++    #[Attribute3(), Attribute4]
+     public function method(
++        /** @param int $parameter */
+         #[Attribute1] #[Attribute2] #[Attribute3]
+         #[Attribute4] #[Attribute5] #[Attribute6]
+-        /** @param int $parameter */
+         int $parameter,
+     ): void {
+-        /*There should be a space separator*/
++        /* There should be a space separator*/
+         echo $parameter;
+-        # This comment is not allowed
+-        #This is wrong, too
++        // This comment is not allowed
++        // This is wrong, too
+     }
+ }
+--- tests/wrong/ContainsHTML.php
++++ PHP_CodeSniffer
+@@ -3,18 +3,18 @@
+ declare(strict_types=1);
+ 
+ $foo = [
+-        "foo" => 1,
++    "foo" => 1,
+ ];
+ 
+ $bar = [
+-  "bar" => 1,
++    "bar" => 1,
+ ];
+ 
+ eval("\$str = \"foo\";");
+ 
+-//
++// 
+ 
+-if (count($foo) == 1) {
++if (count($foo) === 1) {
+ }
+ 
+ ?>
+--- tests/wrong/ClassMetrics.php
++++ PHP_CodeSniffer
+@@ -1,8 +1,11 @@
+ <?php
+ 
++declare(strict_types=1);
++
+ namespace Test;
+ 
+-class ClassMetrics {
++class ClassMetrics
++{
+     public function foo($a, $b, $c, $d, $e, $f)
+     {
+         if ($a) {
+@@ -17,10 +20,6 @@
+             }
+         }
+ 
+-        if (true) {
+-          return true;
+-        } else {
+-             return false;
+-        }
++        return true;
+     }
+ }
+
