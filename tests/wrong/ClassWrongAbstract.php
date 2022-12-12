@@ -26,6 +26,7 @@ abstract class ClassWrongAbstract
      */
     public function getOne(): int
     {
+        //There should be a space separator
         return 1;
     }
 
@@ -40,6 +41,9 @@ abstract class ClassWrongAbstract
         /** @param int $parameter */
         int $parameter,
     ): void {
+        /*There should be a space separator*/
         echo $parameter;
+        # This comment is not allowed
+        #This is wrong, too
     }
 }
