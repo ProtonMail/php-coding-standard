@@ -59,4 +59,12 @@ abstract final class Test {
     {
         return 1;
     }
+
+    private function testAssignmentInCondition(int $a): void {
+        if ($a == 1 && $b = 2) {
+            $c = 3;
+        }
+
+        $c == 3 && $d = 4;
+    }
 }

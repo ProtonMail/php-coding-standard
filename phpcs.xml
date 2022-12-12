@@ -4,7 +4,7 @@
         Proton PHP Coding Standard
     </description>
 
-    <config name="installed_paths" value="../Proton"/>
+    <config name="installed_paths" value="Proton"/>
 
     <rule ref="Proton"/>
 

@@ -1,10 +1,28 @@
 Line,Column,Type,Source
 4,10,error,PSR2.Files.EndFileNewline.NoneFound
+3,1,error,SlevomatCodingStandard.Commenting.EmptyComment.EmptyComment
 1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
-7,11,error,Proton.Naming.InterfaceName.Found
-8,1,error,SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.IncorrectEmptyLinesAfterOpeningBrace
-8,1,error,PSR12.Classes.OpeningBraceSpace.Found
-7,16,error,Proton.Naming.AbstractClassName.Found
+7,1,error,Generic.NamingConventions.TraitNameSuffix.Missing
+7,1,error,Generic.NamingConventions.InterfaceNameSuffix.Missing
+6,9,error,Generic.Arrays.ArrayIndent.KeyIncorrect
+21,1,error,Generic.Files.InlineHTML.Found
+17,17,error, use === instead."
+17,1,error,Generic.CodeAnalysis.EmptyStatement.DetectedIf
+15,1,error,SlevomatCodingStandard.Commenting.EmptyComment.EmptyComment
+13,1,warning,Squiz.PHP.Eval.Discouraged
+10,3,error,Generic.Arrays.ArrayIndent.KeyIncorrect
+8,1,error,SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse
+6,1,error, found 2."
+39,37,error,SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment.AttributeBeforeDocComment
+33,5,error,SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment.AttributeBeforeDocComment
+3,1,error, found 2."
+23,8,error,SlevomatCodingStandard.Commenting.ForbiddenComments.CommentForbidden
+22,8,error,SlevomatCodingStandard.Commenting.ForbiddenComments.CommentForbidden
+19,8,error,SlevomatCodingStandard.Commenting.ForbiddenComments.CommentForbidden
+14,1,error,SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.IncorrectEmptyLinesAfterOpeningBrace
+14,1,error,PSR12.Classes.OpeningBraceSpace.Found
+13,10,error,Generic.NamingConventions.AbstractClassNamePrefix.Missing
+11,4,error,SlevomatCodingStandard.Commenting.ForbiddenComments.CommentForbidden
 6,12,warning,Generic.Metrics.NestingLevel.TooHigh
 6,12,error,SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingAnyTypeHint
 6,12,error,SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingAnyTypeHint
@@ -18,9 +36,17 @@ Line,Column,Type,Source
 20,9,warning,Generic.CodeAnalysis.UnconditionalIfStatement.Found
 20,9,error,SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn.UselessIfCondition
 1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
+8,1,error,SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse
 8,1,error, found 1."
-62,1,error,PSR2.Files.EndFileNewline.NoneFound
+70,1,error,PSR2.Files.EndFileNewline.NoneFound
+68,23,error,Squiz.PHP.DisallowMultipleAssignments.Found
+68,12,error, use === instead."
+64,27,warning,Generic.CodeAnalysis.AssignmentInCondition.Found
+64,27,error,Squiz.PHP.DisallowMultipleAssignments.FoundInControlStructure
+64,16,error, use === instead."
+63,62,error,Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine
 6,18,error,PSR12.Files.FileHeader.SpacingInsideBlock
+6,1,error,SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse
 58,60,error,SlevomatCodingStandard.TypeHints.UnionTypeHintFormat.NullTypeHintNotOnLastPosition
 58,32,error,SlevomatCodingStandard.TypeHints.UnionTypeHintFormat.NullTypeHintNotOnLastPosition
 58,13,warning,Generic.CodeAnalysis.UnusedFunctionParameter.Found
@@ -44,6 +70,7 @@ Line,Column,Type,Source
 38,9,error,Generic.PHP.LowerCaseKeyword.Found
 38,9,error,Squiz.ControlStructures.LowercaseDeclaration.FoundUppercase
 38,9,error,Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword
+38,21,error, use === instead."
 38,12,error,Squiz.NamingConventions.ValidVariableName.NotCamelCaps
 38,1,error,Generic.WhiteSpace.DisallowTabIndent.TabsUsed
 36,9,error,Squiz.NamingConventions.ValidVariableName.NotCamelCaps
@@ -55,6 +82,7 @@ Line,Column,Type,Source
 34,13,error,SlevomatCodingStandard.TypeHints.ReturnTypeHint.MissingAnyTypeHint
 31,24,error,Proton.Spacing.ArrowFunctionSpacing.Found
 28,27,error,PSR12.Classes.AnonClassDeclaration.SpaceAfterKeyword
+26,11,error,Generic.Arrays.ArrayIndent.CloseBraceIncorrect
 25,13,error,SlevomatCodingStandard.Arrays.TrailingArrayComma.MissingTrailingComma
 22,9,error,Proton.Architecture.ForbiddenNamespacedFunctions.FoundWithAlternative
 20,19,error,Generic.PHP.BacktickOperator.Found
@@ -69,5 +97,5 @@ Line,Column,Type,Source
 10,27,error,SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.IncorrectEmptyLinesAfterOpeningBrace
 10,27,error,PSR2.Classes.ClassDeclaration.OpenBraceNewLine
 10,27,error,PSR12.Classes.OpeningBraceSpace.Found
-10,22,error,Proton.Naming.AbstractClassName.Found
+10,16,error,Generic.NamingConventions.AbstractClassNamePrefix.Missing
 1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
