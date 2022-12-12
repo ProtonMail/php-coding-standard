@@ -11,10 +11,10 @@ Line,Column,Type,Source
 15,1,error,SlevomatCodingStandard.Commenting.EmptyComment.EmptyComment
 13,1,warning,Squiz.PHP.Eval.Discouraged
 10,3,error,Generic.Arrays.ArrayIndent.KeyIncorrect
-8,1,warning,SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse
+8,1,error,SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse
 6,1,error, found 2."
-39,37,warning,SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment.AttributeBeforeDocComment
-33,5,warning,SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment.AttributeBeforeDocComment
+39,37,error,SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment.AttributeBeforeDocComment
+33,5,error,SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment.AttributeBeforeDocComment
 3,1,error, found 2."
 23,8,error,SlevomatCodingStandard.Commenting.ForbiddenComments.CommentForbidden
 22,8,error,SlevomatCodingStandard.Commenting.ForbiddenComments.CommentForbidden
@@ -36,7 +36,7 @@ Line,Column,Type,Source
 20,9,warning,Generic.CodeAnalysis.UnconditionalIfStatement.Found
 20,9,error,SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn.UselessIfCondition
 1,1,error,SlevomatCodingStandard.TypeHints.DeclareStrictTypes.DeclareStrictTypesMissing
-8,1,warning,SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse
+8,1,error,SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse
 8,1,error, found 1."
 70,1,error,PSR2.Files.EndFileNewline.NoneFound
 68,23,error,Squiz.PHP.DisallowMultipleAssignments.Found
@@ -46,7 +46,7 @@ Line,Column,Type,Source
 64,16,error, use === instead."
 63,62,error,Squiz.Functions.MultiLineFunctionDeclaration.BraceOnSameLine
 6,18,error,PSR12.Files.FileHeader.SpacingInsideBlock
-6,1,warning,SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse
+6,1,error,SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse
 58,60,error,SlevomatCodingStandard.TypeHints.UnionTypeHintFormat.NullTypeHintNotOnLastPosition
 58,32,error,SlevomatCodingStandard.TypeHints.UnionTypeHintFormat.NullTypeHintNotOnLastPosition
 58,13,warning,Generic.CodeAnalysis.UnusedFunctionParameter.Found
