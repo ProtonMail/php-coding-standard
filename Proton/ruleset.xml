@@ -286,14 +286,13 @@
 
     <!-- Forbid unused use statements -->
     <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
-        <type>warning</type>
         <properties>
             <property name="searchAnnotations" value="true"/>
         </properties>
     </rule>
 
     <!-- Requires that attributes are always after documentation comment -->
-    <rule ref="SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment"><type>warning</type></rule>
+    <rule ref="SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment"/>
 
     <exclude-pattern>*/node_modules/*</exclude-pattern>
     <exclude-pattern>*/vendor/*</exclude-pattern>
