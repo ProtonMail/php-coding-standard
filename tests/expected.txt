@@ -10,7 +10,7 @@ FILE                                                                            
 /Users/Username/dev/Proton/php-coding-standard/tests/wrong/InterfaceWrong.php         1       0
 /Users/Username/dev/Proton/php-coding-standard/tests/wrong/TraitInvalid.php           1       0
 ------------------------------------------------------------------------------------------------------
-A TOTAL OF 69 ERRORS AND 8 WARNINGS WERE FOUND IN 6 FILES
+A TOTAL OF 86 ERRORS AND 14 WARNINGS WERE FOUND IN 7 FILES
 ------------------------------------------------------------------------------------------------------
-PHPCBF CAN FIX 43 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX 63 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------------------

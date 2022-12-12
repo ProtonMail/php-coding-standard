@@ -20,10 +20,15 @@ final class ClassOk
      * Foo.
      */
     protected array $foo = [];
+    private array $bar = [];
     private string $test = 'foo';
 
     public function __construct(array $config)
     {
+        $this->bar = [
+            'bar' => 'foo',
+        ];
+
         $this->foo = $config + [
             'foo' => 'bar',
         ];
@@ -42,6 +47,7 @@ final class ClassOk
             );
         } catch (\RuntimeException) {
             // ...
+        } catch (\Exception) {
         }
 
         return $request->query->get('test');
@@ -70,6 +76,10 @@ final class ClassOk
 
         if ($a === 'z') {
             throw new \RuntimeException();
+        }
+
+        if ($a === 'y') {
+            throw new \Exception('');
         }
 
         return false;

@@ -98,7 +98,7 @@
 
     <rule ref="Generic.Metrics.CyclomaticComplexity">
         <properties>
-            <property name="complexity" value="15"/>
+            <property name="complexity" value="10"/>
             <property name="absoluteComplexity" value="20"/>
         </properties>
     </rule>
@@ -163,7 +163,6 @@
     <rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration"/>
     <rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
     <rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
-<!--    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses"/>-->
     <rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
     <rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
     <rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
@@ -199,7 +198,17 @@
             <property name="nullPosition" value="last" />
         </properties>
     </rule>
-    <rule ref="SlevomatCodingStandard.Commenting.ForbiddenComments"/>
+    <rule ref="SlevomatCodingStandard.Commenting.ForbiddenComments">
+        <properties>
+            <property name="forbiddenCommentPatterns" type="array">
+                <element value="~^(?:(?!private|protected|static)\S+ )?(?:con|de)structor\.\z~i"/>
+                <element value="~^Created by .+\.\z~i"/>
+                <element value="~^(User|Date|Time): \S+\z~i"/>
+                <element value="~^\S+ [gs]etter\.\z~i"/>
+                <element value="~^Class \S+\z~i"/>
+            </property>
+        </properties>
+    </rule>
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration"/>
     <rule ref="SlevomatCodingStandard.Commenting.DeprecatedAnnotationDeclaration"/>
     <rule ref="SlevomatCodingStandard.Commenting.InlineDocCommentDeclaration">
@@ -252,6 +261,39 @@
     </rule>
 
     <rule ref="Proton.Spacing.ArrowFunctionSpacing"/>
+
+    <!-- PHP files should only contain code -->
+    <rule ref="Generic.Files.InlineHTML"/>
+
+    <!-- Force array element indentation with 4 spaces -->
+    <rule ref="Generic.Arrays.ArrayIndent">
+        <exclude name="Generic.Arrays.ArrayIndent.CloseBraceNotNewLine"/>
+    </rule>
+
+    <rule ref="Squiz.PHP.Eval"/>
+
+    <!-- Forbid empty statements -->
+    <rule ref="Generic.CodeAnalysis.EmptyStatement">
+        <!-- But allow empty catch -->
+        <exclude name="Generic.CodeAnalysis.EmptyStatement.DetectedCatch"/>
+    </rule>
+
+    <!-- Enforce strict comparisons -->
+    <rule ref="SlevomatCodingStandard.Operators.DisallowEqualOperators"/>
+
+    <!-- Forbid empty comments -->
+    <rule ref="SlevomatCodingStandard.Commenting.EmptyComment"/>
+
+    <!-- Forbid unused use statements -->
+    <rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
+        <type>warning</type>
+        <properties>
+            <property name="searchAnnotations" value="true"/>
+        </properties>
+    </rule>
+
+    <!-- Requires that attributes are always after documentation comment -->
+    <rule ref="SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment"><type>warning</type></rule>
 
     <exclude-pattern>*/node_modules/*</exclude-pattern>
     <exclude-pattern>*/vendor/*</exclude-pattern>

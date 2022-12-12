@@ -2,15 +2,44 @@
 
 declare(strict_types=1);
 
+
 namespace wrong;
 
+use RuntimeException;
+
+/**
+ * Class ClassWrongAbstract
+ */
 abstract class ClassWrongAbstract
 {
 
     abstract public function setOne(int $one = 1): void;
 
+    /**
+     * one getter.
+     *
+     * Created by me
+     * User: me
+     * Date: now
+     * Time: see date
+     *
+     */
     public function getOne(): int
     {
         return 1;
+    }
+
+    #[Attribute1, Attribute2('var')]
+    #[Attribute3(), Attribute4]
+    /**
+     * Method comment
+     */
+    public function method(
+        #[Attribute1] #[Attribute2] #[Attribute3]
+        #[Attribute4] #[Attribute5] #[Attribute6]
+        /** @param int $parameter */
+        int $parameter,
+    ): void {
+        echo $parameter;
     }
 }
