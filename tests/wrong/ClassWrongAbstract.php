@@ -18,14 +18,15 @@ abstract class ClassWrongAbstract
     /**
      * one getter.
      *
-     * Created by me
+     * Created by me.
      * User: me
      * Date: now
-     * Time: see date
+     * Time: now
      *
      */
     public function getOne(): int
     {
+        //There should be a space separator
         return 1;
     }
 
@@ -40,6 +41,15 @@ abstract class ClassWrongAbstract
         /** @param int $parameter */
         int $parameter,
     ): void {
+        /*There should be a space separator*/
         echo $parameter;
+        # This comment is not allowed
+        #This is wrong, too
+        //
+        /**/
+
+        //
+        //The space is missing again
+        //
     }
 }

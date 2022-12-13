@@ -3,4 +3,5 @@
 .phpintel
 /vendor/
 out.csv
+out.diff
 composer.lock

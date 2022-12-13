@@ -13,11 +13,23 @@ Line,Column,Type,Source
 10,3,error,Generic.Arrays.ArrayIndent.KeyIncorrect
 8,1,error,SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse
 6,1,error, found 2."
-39,37,error,SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment.AttributeBeforeDocComment
-33,5,error,SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment.AttributeBeforeDocComment
+53,9,error,SlevomatCodingStandard.Commenting.EmptyComment.EmptyComment
+52,9,error,Proton.Commenting.InlineCommentStartsWithSpace.WrongStyle
+51,9,error,SlevomatCodingStandard.Commenting.EmptyComment.EmptyComment
+49,9,error,SlevomatCodingStandard.Commenting.EmptyComment.EmptyComment
+48,9,error,SlevomatCodingStandard.Commenting.EmptyComment.EmptyComment
+47,9,error,PEAR.Commenting.InlineComment.WrongStyle
+47,9,error,Proton.Commenting.InlineCommentStartsWithSpace.WrongStyle
+46,9,error,PEAR.Commenting.InlineComment.WrongStyle
+44,9,error,Proton.Commenting.InlineCommentStartsWithSpace.WrongStyle
+40,37,error,SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment.AttributeBeforeDocComment
+34,5,error,SlevomatCodingStandard.Attributes.RequireAttributeAfterDocComment.AttributeBeforeDocComment
 3,1,error, found 2."
+29,9,error,Proton.Commenting.InlineCommentStartsWithSpace.WrongStyle
+24,8,error,SlevomatCodingStandard.Commenting.ForbiddenComments.CommentForbidden
 23,8,error,SlevomatCodingStandard.Commenting.ForbiddenComments.CommentForbidden
 22,8,error,SlevomatCodingStandard.Commenting.ForbiddenComments.CommentForbidden
+21,8,error,SlevomatCodingStandard.Commenting.ForbiddenComments.CommentForbidden
 19,8,error,SlevomatCodingStandard.Commenting.ForbiddenComments.CommentForbidden
 14,1,error,SlevomatCodingStandard.Classes.EmptyLinesAroundClassBraces.IncorrectEmptyLinesAfterOpeningBrace
 14,1,error,PSR12.Classes.OpeningBraceSpace.Found

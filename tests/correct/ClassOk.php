@@ -25,10 +25,12 @@ final class ClassOk
 
     public function __construct(array $config)
     {
+        // This is a valid comment
         $this->bar = [
             'bar' => 'foo',
         ];
 
+        /* This is another valid comment */
         $this->foo = $config + [
             'foo' => 'bar',
         ];

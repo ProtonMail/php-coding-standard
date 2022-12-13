@@ -14,6 +14,7 @@
     </rule>
 
     <rule ref="PEAR.Commenting.InlineComment"/>
+    <rule ref="Proton.Commenting.InlineCommentStartsWithSpace"/>
 
     <rule ref="Generic.Commenting.Todo"/>
     <rule ref="Generic.PHP.BacktickOperator"/>
