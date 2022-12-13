@@ -112,7 +112,7 @@
 +}
 --- tests/wrong/ClassWrongAbstract.php
 +++ PHP_CodeSniffer
-@@ -2,48 +2,32 @@
+@@ -2,54 +2,33 @@
  
  declare(strict_types=1);
  
@@ -164,13 +164,20 @@
          echo $parameter;
 -        # This comment is not allowed
 -        #This is wrong, too
+-        //
+-        /**/
+-
+-        //
+-        //The space is missing again
+-        //
 +        // This comment is not allowed
 +        // This is wrong, too
++        // The space is missing again
      }
  }
 --- tests/wrong/ContainsHTML.php
 +++ PHP_CodeSniffer
-@@ -3,18 +3,18 @@
+@@ -3,18 +3,16 @@
  declare(strict_types=1);
  
  $foo = [
@@ -186,8 +193,7 @@
  eval("\$str = \"foo\";");
  
 -//
-+// 
- 
+-
 -if (count($foo) == 1) {
 +if (count($foo) === 1) {
  }

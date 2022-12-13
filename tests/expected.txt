@@ -5,13 +5,13 @@ FILE                                                                            
 ------------------------------------------------------------------------------------------------------
 /Users/Username/dev/Proton/php-coding-standard/tests/wrong/Class1.php                 57      6
 /Users/Username/dev/Proton/php-coding-standard/tests/wrong/ClassMetrics.php           11      2
-/Users/Username/dev/Proton/php-coding-standard/tests/wrong/ClassWrongAbstract.php     18      0
-/Users/Username/dev/Proton/php-coding-standard/tests/wrong/ContainsHTML.php           7       1
+/Users/Username/dev/Proton/php-coding-standard/tests/wrong/ClassWrongAbstract.php     24      0
+/Users/Username/dev/Proton/php-coding-standard/tests/wrong/ContainsHTML.php           6       1
 /Users/Username/dev/Proton/php-coding-standard/tests/wrong/file.php                   3       0
 /Users/Username/dev/Proton/php-coding-standard/tests/wrong/InterfaceWrong.php         1       0
 /Users/Username/dev/Proton/php-coding-standard/tests/wrong/TraitInvalid.php           1       0
 ------------------------------------------------------------------------------------------------------
-A TOTAL OF 98 ERRORS AND 9 WARNINGS WERE FOUND IN 7 FILES
+A TOTAL OF 103 ERRORS AND 9 WARNINGS WERE FOUND IN 7 FILES
 ------------------------------------------------------------------------------------------------------
-PHPCBF CAN FIX 70 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
+PHPCBF CAN FIX 75 OF THESE SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------------------------------------

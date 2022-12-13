@@ -45,5 +45,11 @@ abstract class ClassWrongAbstract
         echo $parameter;
         # This comment is not allowed
         #This is wrong, too
+        //
+        /**/
+
+        //
+        //The space is missing again
+        //
     }
 }
