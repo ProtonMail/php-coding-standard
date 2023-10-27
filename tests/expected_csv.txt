@@ -61,11 +61,9 @@ Line,Column,Type,Source
 6,1,error,SlevomatCodingStandard.Namespaces.UnusedUses.UnusedUse
 58,60,error,SlevomatCodingStandard.TypeHints.UnionTypeHintFormat.NullTypeHintNotOnLastPosition
 58,32,error,SlevomatCodingStandard.TypeHints.UnionTypeHintFormat.NullTypeHintNotOnLastPosition
-58,13,warning,Generic.CodeAnalysis.UnusedFunctionParameter.Found
 53,54,error,SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing.WhitespaceBeforeColon
 53,54,error,SlevomatCodingStandard.TypeHints.UnionTypeHintFormat.DisallowedWhitespace
 53,52,error,PSR12.Functions.ReturnTypeDeclaration.SpaceBeforeColon
-53,20,warning,Generic.CodeAnalysis.UnusedFunctionParameter.FoundAfterLastUsed
 53,20,error,PSR1.Methods.CamelCapsMethodName.NotCamelCaps
 53,20,error,SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingAnyTypeHint
 53,20,error,SlevomatCodingStandard.TypeHints.ParameterTypeHint.MissingAnyTypeHint
