@@ -192,9 +192,9 @@
         <exclude name="SlevomatCodingStandard.TypeHints.PropertyTypeHint.MissingTraversableTypeHintSpecification"/>
     </rule>
     <!-- Define unions style -->
-    <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat">
+    <rule ref="SlevomatCodingStandard.TypeHints.DNFTypeHintFormat">
         <properties>
-            <property name="withSpaces" value="no" />
+            <property name="withSpacesAroundOperators" value="no" />
             <property name="nullPosition" value="last" />
         </properties>
     </rule>
@@ -238,7 +238,6 @@
             <property name="linesCountAfterDeclare" value="1"/>
         </properties>
     </rule>
-    <rule ref="SlevomatCodingStandard.TypeHints.UnionTypeHintFormat"/>
 
     <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch"/>
 
