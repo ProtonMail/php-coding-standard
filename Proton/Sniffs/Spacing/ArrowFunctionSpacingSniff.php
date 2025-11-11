@@ -24,9 +24,9 @@ class ArrowFunctionSpacingSniff implements Sniff
     {
         $tokens = $phpcsFile->getTokens();
 
-        if ($tokens[$stackPtr]['code'] === T_FN && $tokens[$stackPtr + 1]['code'] !== T_WHITESPACE) {
+        if ($tokens[$stackPtr]['code'] === T_FN && $tokens[$stackPtr + 1]['code'] !== T_OPEN_PARENTHESIS) {
             $phpcsFile->addError(
-                'The fn arrow function token should always be followed by a space.',
+                'The fn keyword MUST NOT be succeeded by a space.',
                 $stackPtr,
                 'Found',
             );
