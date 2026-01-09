@@ -118,13 +118,6 @@
         </properties>
     </rule>
 
-    <!-- <rule ref="Squiz.Strings.ConcatenationSpacing">
-        <properties>
-            <property name="spacing" value="1"/>
-            <property name="ignoreNewlines" value="true"/>
-        </properties>
-    </rule> -->
-
     <!-- # Slevomat Coding Standard -->
     <!-- https://github.com/slevomat/coding-standard -->
 
@@ -244,15 +237,6 @@
     </rule>
 
     <rule ref="SlevomatCodingStandard.Exceptions.RequireNonCapturingCatch"/>
-
-    <!-- <rule ref="SlevomatCodingStandard.ControlStructures.EarlyExit">
-        <properties>
-            <property name="ignoreStandaloneIfInScope" value="0"/>
-        </properties>
-    </rule> -->
-    <!--<rule ref="SlevomatCodingStandard.Operators.RequireCombinedAssignmentOperator"/>-->
-    <!--<rule ref="SlevomatCodingStandard.Namespaces.FullyQualifiedClassNameInAnnotation"/>-->
-    <!--<rule ref="SlevomatCodingStandard.Functions.UnusedParameter"/>-->
 
     <!--
        If you want to completely disable an error message in a sniff
